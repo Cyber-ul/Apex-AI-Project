@@ -1,0 +1,154 @@
+/* --- Global Styles --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); /* Dark Blue/Gray gradient */
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); /* Stronger Shadow */
+    max-width: 1200px;
+    width: 100%;
+}
+
+h1 {
+    color: #4CAF50; /* Green highlight for the title */
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.container > p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #7f8c8d;
+    font-size: 1.1em;
+}
+
+/* --- Main Two-Column Layout --- */
+.main-content {
+    display: flex;
+    gap: 30px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f5f7fa; /* Light background for columns */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.column h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* --- Input Area --- */
+textarea, #chat-input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+textarea:focus, #chat-input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50; /* Primary Green */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* --- Results Styling --- */
+.results-box {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e8f5e9; /* Very light green for results */
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+    display: none; 
+}
+
+.score-card {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #4CAF50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.score-card span {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #4CAF50;
+}
+
+/* --- Secret Feature Highlight --- */
+.secret-score {
+    border-left: 5px solid #3498db; /* Blue for the unique feature */
+}
+.secret-score span {
+    color: #3498db;
+}
+
+/* --- Chat Window Styling --- */
+.chat-window {
+    height: 300px; /* Fixed height for chat history */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    overflow-y: auto; /* Scrollable chat */
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.ai-message {
+    text-align: left;
+    background-color: #ecf0f1; /* Light gray for AI bubble */
+    padding: 8px 12px;
+    border-radius: 15px 15px 15px 0;
+    max-width: 80%;
+    margin-bottom: 10px;
+}
+
+.user-message {
+    text-align: right;
+    background-color: #4CAF50; /* Green for User bubble */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 15px 15px 0 15px;
+    max-width: 80%;
+    margin-left: auto; /* Push to the right */
+    margin-bottom: 10px;
+}

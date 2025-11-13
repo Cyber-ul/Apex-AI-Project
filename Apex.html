@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX 2.0: The Universal Empathy AI</title>
+    <link rel="stylesheet" href="./Apex.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>✨ APEX: The Universal Empathy AI ✨</h1>
+        <p>Your all-in-one tutor for communication, problem-solving, and self-awareness.</p>
+        
+        <div class="main-content">
+            
+            <div class="column tutor-area">
+                <h2>🗣️ Empathy Coach: Online Mode</h2>
+                <textarea id="text-input" placeholder="Type your email or feedback here..." rows="6"></textarea>
+                <button onclick="runApexAnalysis()">Analyze Communication</button>
+                
+                <div id="results-area" class="results-box">
+                    <h3 class="results-title">Analysis Report</h3>
+                    <div id="resonance-output" class="score-card"></div>
+                    <div id="clarity-output" class="score-card"></div>
+                    
+                    <div id="unique-feature-output" class="score-card secret-score"></div> <div id="feedback-output"></div>
+                </div>
+            </div>
+            
+            <div class="column chat-area">
+                <h2>💡 AI Problem Solver / Chat / Empathy Coach: Offline Mode</h2>
+                <div id="chat-window" class="chat-window">
+                    <p class="ai-message">Hello! What shall we talk about today?😊 Type your email or feedback here...</p>
+                </div>
+                <input type="text" id="chat-input" placeholder="Ask Apex a question (e.g., 'What is the formula for speed?')" onkeypress="handleChat(event)">
+            </div>
+        </div>        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+    <script src="./Apex.js"></script>
+    
+</body>
+</html>
